@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+    - name: staging
+      database: "{{ env_var('GCP_PROJECT_ID') }}"
+      schema: covid_crawl_stg
+      tables:
+        - name: covid_crawl_events
